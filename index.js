@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 
-app.use(cors());
 //3.7
 const morgan = require("morgan");
 const app = express();
+app.use(cors());
 
 //3.8
 morgan.token("body", function logBody(req) {
